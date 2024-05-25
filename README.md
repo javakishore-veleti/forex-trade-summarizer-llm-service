@@ -28,6 +28,11 @@ In FOREX trading, timely and accurate information is crucial. The Trade Summariz
 
 ## Application Architecture
 
+![Application Architecture](Docs/Designs/Application_Architecture.png)
+
+```plantuml
+Insert image here from Docs/Design/Architecture.png
+
 ```plantuml
 @startuml
 
