@@ -2,7 +2,9 @@
 FOREX Trade Summarizer is Spring Boot, Apache Nifi, RabbitMQ, MongoDB, Java, LLM application that summarizes trade events using Java LLM libraries
 
 ## Introduction
-This FOREX Trade Summarizer applications demonstrates an innovative approach to automating the generation of insightful trade summaries for FOREX trade events. By leveraging Large Language Models (LLMs) and a robust data pipeline, it aims to empower traders and analysts with concise, informative summaries that can enhance decision-making and improve risk management.
+This FOREX Trade Summarizer applications demonstrates an innovative approach to automating the generation of insightful trade summaries for FOREX trade events. 
+
+By leveraging Large Language Models (LLMs) and a robust data pipeline, it aims to empower traders and analysts with concise, informative summaries that can enhance decision-making and improve risk management.
 
 ## Value Proposition
 In the fast-paced world of FOREX trading, timely and accurate information is crucial. The Trade Summarizer offers several key benefits:
