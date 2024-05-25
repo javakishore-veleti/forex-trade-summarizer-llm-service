@@ -1,0 +1,15 @@
+{
+  "name": "forex-trade-summarizer-llm-service",
+  "version": "1.0.0",
+  "description": "FOREX Trade Summarizer is Spring Boot, Apache Nifi, RabbitMQ, MongoDB, Java, LLM application that summarizes trade events using Java LLM libraries",
+  "main": "index.js",
+  "scripts": {
+    "docker-build-all": "sh DevOps/Descriptors/docker-build-all.sh",
+    "docker-run-all": "sh DevOps/Descriptors/docker-run-all.sh",
+    "docker-stop-all": "sh DevOps/Descriptors/docker-stop-all.sh",
+    "docker-remove-all": "sh DevOps/Descriptors/docker-remove-all.sh",
+    "docker-stop-remove-build-all": "(sh DevOps/Descriptors/docker-stop-all.sh || true) && (sh DevOps/Descriptors/docker-remove-all.sh || true) && (sh DevOps/Descriptors/docker-build-all.sh || true)"
+  },
+  "author": "",
+  "license": "ISC"
+}

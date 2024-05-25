@@ -198,3 +198,42 @@ The deployment and management of these AWS resources are automated using Ansible
 - Configure and start the containers on each instance.
 - (Optional) Set up a Lightsail Load Balancer.
 
+## Creating the Application codebase
+
+```shell
+mvn archetype:generate -DgroupId=com.example -DartifactId=forex-trade-summarizer-llm-service -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+cd forex-trade-summarizer-llm-service
+
+mvn archetype:generate -DgroupId=com.example -DartifactId=forex-trade-event-producer -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+mvn archetype:generate -DgroupId=com.example -DartifactId=forex-trade-event-consumer -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+mvn archetype:generate -DgroupId=com.example -DartifactId=forex-trade-summarizer -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+```
+
+## Running the Application
+```shell
+
+npm run docker-stop-remove-build-all
+npm run docker-run-all
+
+```
+
+## Running the Application - Login Details
+
+### Apache Nifi
+- URL: https://localhost:8443/nifi/
+- username: admin
+- password: ctsBtRBKHRAx69EqUghvvgEvjnaLjFEB
+
+## Troubleshooting
+If you encounter any issues during deployment or operation of the application, consider the following troubleshooting steps:
+
+### Apache Nifi Troubleshooting
+
+```shell
+# docker build --no-cache -t forex-trade-summarizer-apache-nfi .
+docker run -it -p 8080:8080 -v ./logs:/opt/nifi/nifi-current/logs forex-trade-summarizer-apache-nfi
+```
